@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Data Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dynamic Data Visualization</h1>
+      <p class="upload-message">Please upload a data file (CSV, XLS).</p>
+      <input type="file" id="dataFile" accept=".csv, .xls" />
+      <div class="select-columns">
+        <label for="xColumn">Select X Column:</label>
+        <select id="xColumn"></select>
+        <label for="yColumn">Select Y Column:</label>
+        <select id="yColumn"></select>
+        <button id="visualizeButton">Visualize Data</button>
+      </div>
+      <div>
+        <p id="note" class="initial-note">
+          Please select the required data columns for accurate visualization.
+          Please select at least one numerical data type column for better
+          visualization.
+        </p>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
