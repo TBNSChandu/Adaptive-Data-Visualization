@@ -1,1 +1,2 @@
 # Dynamic-Data-Visualization
+This web application offers dynamic data visualization capabilities, allowing users to seamlessly upload CSV or XLS files. With provided intuitive interface, users can make precise selections of the columns they want to visualize. The resultant data is elegantly transformed into compelling bar graphs, providing valuable insights and a visually engaging representation of user information.
